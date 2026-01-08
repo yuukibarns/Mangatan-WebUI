@@ -30,10 +30,8 @@ export const useMangaObserver = () => {
                 
                 if (img.src.includes('thumbnail')) return false;
 
-                // Exclude cropper images
-                if (img.closest('.ReactCrop')) {
-                    return false;
-                }
+                // Exclude images inside the cropper modal
+                if (img.closest('.cropper-modal-content')) return false;
 
                 return true;
             });

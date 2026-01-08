@@ -279,6 +279,75 @@ body:has(.ocr-modal) .ocr-overlay-container {
     pointer-events: none !important;
 }
 
+/* --- CROPPERJS CUSTOMIZATION FOR BETTER UX --- */
+.cropper-modal-content .cropper-container {
+    height: 100% !important;
+}
+
+.cropper-modal-content .cropper-point {
+    width: 20px !important;
+    height: 20px !important;
+    opacity: 1 !important;
+}
+
+.cropper-modal-content .cropper-point.point-nw {
+    top: -10px !important;
+    left: -10px !important;
+}
+
+.cropper-modal-content .cropper-point.point-ne {
+    top: -10px !important;
+    right: -10px !important;
+}
+
+.cropper-modal-content .cropper-point.point-sw {
+    bottom: -10px !important;
+    left: -10px !important;
+}
+
+.cropper-modal-content .cropper-point.point-se {
+    bottom: -10px !important;
+    right: -10px !important;
+}
+
+.cropper-modal-content .cropper-point.point-n {
+    width: 40px !important;
+    height: 20px !important;
+    top: -10px !important;
+    left: 50% !important;
+    margin-left: -20px !important;
+}
+
+.cropper-modal-content .cropper-point.point-s {
+    width: 40px !important;
+    height: 20px !important;
+    bottom: -10px !important;
+    top: auto !important;
+    left: 50% !important;
+    margin-left: -20px !important;
+}
+
+.cropper-modal-content .cropper-point.point-e {
+    height: 40px !important;
+    width: 20px !important;
+    right: -10px !important;
+    left: auto !important;
+    top: 50% !important;
+    margin-top: -20px !important;
+}
+
+.cropper-modal-content .cropper-point.point-w {
+    height: 40px !important;
+    width: 20px !important;
+    left: -10px !important;
+    top: 50% !important;
+    margin-top: -20px !important;
+}
+
+.cropper-modal-content .cropper-line {
+    background-color: rgba(59, 130, 246, 0.5) !important;
+}
+
 /* --- STATUS ICON --- */
 .ocr-status-icon-container {
     position: absolute; top: 15px; right: 15px; z-index: 200000; 
